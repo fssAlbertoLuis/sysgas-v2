@@ -17,7 +17,7 @@ const CustomerPage = ({
 }) => {
 
   const [customer, setCustomer] = React.useState({
-    name: '', type: '', phone: '', address: '',
+    name: '', type: '', mail:'', phone: '', address: '',
   });
   const [loading, setLoading] = React.useState(false);
   const [openDialog, setOpenDialog] = React.useState(false);

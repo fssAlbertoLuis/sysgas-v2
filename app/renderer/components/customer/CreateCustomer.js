@@ -51,6 +51,22 @@ const CreateCustomer = ({
           </FormGroup>
           <FormGroup
             helperText=""
+            label="Email"
+            labelFor="text-input"
+            style={styles}
+          >
+            <InputGroup 
+              type="text" 
+              name="customer.mail" 
+              disabled={loading}
+              value={customer.mail}
+              onChange={handleChange('mail')}
+              required
+              autoFocus
+            />
+          </FormGroup>
+          <FormGroup
+            helperText=""
             label="Telefone"
             labelFor="text-input"
             style={styles}
